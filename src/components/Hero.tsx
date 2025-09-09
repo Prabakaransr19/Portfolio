@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
-import profilePic from '../pages/profile.jpg';
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -26,11 +25,11 @@ const Hero = () => {
             <div className="relative">
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-neon-green bg-card flex items-center justify-center shadow-neon-green relative overflow-hidden group cursor-pointer">
                 {/* Your image */}
-                <img 
-                  src={profilePic}  
-                  alt="Prabakaran S R" 
-                  className="w-full h-full object-cover rounded-full" 
-                />
+                  <img 
+                    src="/profile.jpg" 
+                    alt="Prabakaran S R" 
+                    className="w-full h-full object-cover rounded-full" 
+                  />
                 {/* Hover overlay */}
                 <div className="absolute inset-0 bg-neon-green/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full flex items-center justify-center">
                   <span className="text-neon-green font-semibold text-sm">Upload Image</span>
